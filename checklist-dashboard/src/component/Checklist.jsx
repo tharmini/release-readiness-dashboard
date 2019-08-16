@@ -212,17 +212,15 @@ export default class Checklist extends Component {
             dependencySummaryLoading: false
         };
         this.handleChangeProductName = event => {
-            this.setState({ [event.target.name]: event.target.value });
             this.setState({
-                selectedProductName: event.target.value,
-            });
+                [event.target.name]: event.target.value,
+                selectedProductName: event.target.value});
+
         };
 
         this.handleChangeProductVersion = event => {
             this.setState({
-                [event.target.name]: event.target.value
-            });
-            this.setState({
+                [event.target.name]: event.target.value,
                 selectedProductVersion: event.target.value,
             });
         }

@@ -214,14 +214,15 @@ export default class Checklist extends Component {
         this.handleChangeProductName = event => {
             this.setState({
                 [event.target.name]: event.target.value,
-                selectedProductName: event.target.value});
+                selectedProductName: event.target.value
+                });
 
         };
 
         this.handleChangeProductVersion = event => {
             this.setState({
                 [event.target.name]: event.target.value,
-                selectedProductVersion: event.target.value,
+                selectedProductVersion: event.target.value
             });
         }
     }
